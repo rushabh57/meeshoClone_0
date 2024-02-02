@@ -1226,7 +1226,7 @@ BreakPoitns
 
   /* Product For You */
   .product-card {
-    height: 15rem;
+    height: 20rem;
     background-color: white;
     border: 1.1px solid rgba(100, 100, 111, 0.2);
 
@@ -1847,7 +1847,7 @@ button span:focus {
     margin-top: 0.1em;
     position: relative;
     top: 40px;
-    left: -90px;
+    left: -100px;
     z-index: 11;
   }
 
