@@ -16,6 +16,7 @@
 </head>
 
 <body class="showy">
+
     <div class="loader">
         <div class="i-c">
             <img src="./imgs/logo/logo.png" alt="">
@@ -1081,8 +1082,11 @@
                 <style>
                     .search-input-for-container {
                         height: 2.5rem;
-                        width: 95%;
-                        margin:auto;
+                        /*  */
+                        width: 100%;
+                        overflow: hidden;
+                        margin: auto;
+                        /*  */
                         background: white;
                         border: 1.4px solid var(--whiteMoreLighter);
                         display: flex;
@@ -1095,7 +1099,7 @@
                         height: 100%;
                         flex: 1;
                         font-family: var(--ff-P);
-                        padding-left: .5em;
+                        padding-left: 1em;
                         font-size: .99em;
                     }
 
@@ -1106,6 +1110,13 @@
                         margin-right: .7em;
                     }
 
+                    @media (max-width: 500px) {
+
+                        .search-input-for-container svg {
+                            margin-right: 2em;
+                        }
+                    }
+
                     .search-input-for-container .srchBtn {
                         height: 100%;
                         flex: .12;
@@ -1114,6 +1125,8 @@
                         justify-content: center;
                         gap: .5em;
                         background-color: var(--offWhite);
+                        position: relative;
+                        right: 0%;
                         font-family: var(--ff-P);
                         padding: .5em;
                         cursor: pointer;
