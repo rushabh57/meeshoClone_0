@@ -1,0 +1,560 @@
+/* Google Font's Link */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap'); */
+
+/* necessary Code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.visible-popup {
+  display: block;
+}
+/* Body Code */
+body {
+  height: 100vh;
+  background: white;
+}
+/* Add a class to hide products by default */
+.product-card.hide {
+  display: none;
+}
+#popupDescriptionContainer::-webkit-scrollbar {
+  width: 1px;
+  background: transparent;
+}
+#popupDescriptionContainer::-webkit-scrollbar-thumb {
+  width: 1px;
+  background: var(--primary-color);
+}
+
+/* Variable Declaration */
+:root {
+  /* Font's */
+  --ff-M: "Montserrat", sans-serif;
+  --ff-P: "Poppins", sans-serif;
+
+  /* Border's */
+  --br-1: 1px solid red;
+  --br-2: 1px solid blue;
+  --br-3: 1px solid orange;
+
+  /* Main Color's */
+  --primary-color: #f43397;
+  --primary-color-Hover: #ff54ac;
+
+  /* Normal Color */
+  --white: #fff;
+  --offWhite: whitesmoke;
+  --black: #000;
+  --offBalck: #252525;
+  --lightBx: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: 100vh;
+}
+
+/* Free Or Paid Delivery  *Gloabal* */
+.DeliverContent {
+  text-align: center;
+  font-family: sans-serif;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  background: rgb(139, 139, 163, 0.378);
+  line-height: 1.2;
+  color: rgb(139, 139, 163);
+}
+
+.product-card {
+  height: 20rem;
+  background-color: white;
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+
+  width: 15rem;
+  position: relative;
+
+  cursor: pointer;
+
+  border-radius: 1em;
+  overflow: hidden;
+  text-align: right;
+}
+.product-card:hover .product-img-container img {
+  opacity: 0.9;
+}
+.product-card > h2 {
+  font-size: 1.3em;
+  font-family: var(--ff-M);
+
+  text-align: left;
+  margin-top: 0.3em;
+  padding-left: 0.2em;
+
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-card > p {
+  text-align: left;
+  padding-left: 0.2em;
+  font-size: 14px;
+  font-family: var(--ff-P);
+}
+
+.product-card .info {
+  margin-block: 0.5em;
+}
+.product-img-container {
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+.product-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+
+  /* margin-block: .3em; */
+}
+
+.info .rating,
+.info .Supplier {
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+  height: 100%;
+  flex: 1;
+
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.info .rating > img {
+  height: 70%;
+  width: 35%;
+  object-fit: cover;
+  filter: invert(1);
+}
+
+.rating {
+  line-height: 1.2;
+  font-family: var(--ff-P);
+  font-size: 18px;
+  font-weight: 600;
+}
+/*  */
+
+/* PopUp */
+.popup {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.174);
+
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+.popupContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  /* border-radius: 1.5em; */
+  background: white;
+}
+/* CloseBtn */
+.closeBtn {
+  height: 2rem;
+  width: 120px;
+  background: var(--white);
+  border: var(--black) 2px solid;
+
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  color: var(--black);
+
+  transform: translateY(50%) translateX(10%);
+
+  cursor: pointer;
+}
+
+.closeBtn img {
+  height: 100%;
+  width: fit-content;
+  object-fit: contain;
+  transition: 500ms transform ease-in-out;
+}
+.closeBtn:hover img {
+  transform: translateX(-15%);
+}
+
+.closeBtn span {
+  font-family: var(--ff-M);
+}
+
+/* For Styling */
+.border {
+  height: 2px;
+  width: 100%;
+  background: var(--primary-color);
+  margin-top: 2rem;
+}
+/* Grid Warppe */
+.popupcontentWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 85%;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.popupcontentWrapper::-webkit-scrollbar {
+  width: 2px;
+  background: white;
+}
+
+.popupcontentWrapper::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--primary-color-Hover);
+}
+
+/* LeftSide Image Container */
+.popupImgaeContaner {
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5em;
+}
+.popupImgaeContaner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* RightSide Detilas Container */
+.popupDetilasContainer {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  padding: 0.5em;
+  position: relative;
+}
+.popup .label-container {
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+.label-container {
+  width: 100%;
+  margin-top: 1rem;
+  line-height: 1;
+  /* background-color: red; */
+}
+
+.label-container .labelProduct {
+  background: var(--primary-color-Hover);
+  border-radius: 0.3em;
+  font-family: var(--ff-M);
+  /* padding: 0em .03em; */
+  padding: 0.13em 0.8em;
+  margin: 0rem 0.1em;
+
+  line-height: 1;
+  margin: 0rem 0.3em;
+  font-size: 14px;
+  color: #c00063;
+  text-transform: uppercase;
+}
+
+#popupTitle {
+  font-size: 3rem;
+  font-family: var(--ff-M);
+}
+#popupPrice {
+  font-family: var(--ff-P);
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+#popupDelivery {
+  top: 0;
+  height: 2rem;
+  line-height: 1.5;
+  animation: Freewave 8s infinite linear;
+  background: rgb(139, 139, 163);
+}
+@keyframes Freewave {
+  0%,
+  100% {
+    background: linear-gradient(
+      25deg,
+      rgb(139, 139, 163),
+      rgba(190, 190, 215, 0.6)
+    );
+  }
+  50%,
+  80% {
+    background: linear-gradient(
+      55deg,
+      rgba(190, 190, 215, 0.6),
+      rgb(139, 139, 163)
+    );
+  }
+  99% {
+    background: linear-gradient(
+      -25deg,
+      rgba(190, 190, 215, 0.6),
+      rgb(139, 139, 163)
+    );
+  }
+}
+
+#popupDescriptionContainer {
+  height: 150px;
+  text-align: start;
+  width: 100%;
+  padding: 0.5em;
+  overflow-y: scroll;
+  font-family: var(--ff-P);
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+  /* background-color: red; */
+}
+
+#popupDescription {
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+.popupdetailheading {
+  border-bottom: 1.1px solid rgba(100, 100, 111, 0.2);
+  font-family: var(--ff-M);
+}
+
+/* 3 Btn Group */
+
+.btn-group {
+  text-align: center;
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+}
+.btn-group #Cart,
+.btn-group .rating,
+.btn-group .Supplier {
+  flex: 1;
+  height: 100%;
+  line-height: 3rem;
+  font-family: var(--ff-M);
+
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.rating {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.btn-group .Supplier {
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  color: var(--primary-color-Hover);
+  text-decoration: none;
+}
+
+.info .Supplier {
+  font-family: var(--ff-M);
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  color: var(--primary-color-Hover);
+  text-decoration: none;
+}
+
+/* Gloabal suplier Hover */
+.Supplier:hover {
+  text-decoration: underline;
+}
+
+/* ShipmentPoly  */
+.ShipmentPoly {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  background: rgba(238, 130, 229, 0.2);
+  /* margin-bottom: 2rem; */
+}
+.PolyBox {
+  flex: 1;
+  height: 100%;
+  line-height: 3rem;
+
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  overflow: hidden;
+}
+.PolyBox img {
+  object-position: 100% 0%;
+  height: 100%;
+  object-fit: contain;
+  flex: 1;
+}
+.PolyBox p {
+  flex: 1;
+  line-height: 1;
+  font-family: var(--ff-P);
+  text-align: left;
+}
+/*  ShopKeepDetilas Section */
+#shopKeepersContainer {
+  border: 1.1px solid rgba(100, 100, 111, 0.2);
+  height: fit-content;
+}
+#shopKeepersContainer > h3 {
+  text-align: left;
+  margin-block: 1rem;
+  border-bottom: 1.1px solid rgba(100111, 0.2);
+}
+.ShopKieeper-InfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.1px solid rgba(100, 100, 111, 0.2);
+  padding-block: 0.5em;
+  height: fit-content;
+}
+.ShopKieeper-InfoBox .shop-Imag-icon {
+  height: 60px;
+  flex: 1;
+}
+.shop-Imag-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.ShopKieeper-InfoBox .Followers,
+.ShopKieeper-InfoBox .ShopsProducts {
+  flex: 1;
+  text-align: center;
+}
+.ShopKieeper-InfoBox .ShopsProducts p:nth-child(1),
+.ShopKieeper-InfoBox .Followers p:nth-child(1) {
+  font-size: 26px;
+  color: #252525;
+  font-family: var(--ff-M);
+}
+.ShopKieeper-InfoBox .ShopsProducts p:nth-child(2),
+.ShopKieeper-InfoBox .Followers p:nth-child(2) {
+  font-size: 16px;
+  font-family: var(--ff-P);
+  color: rgba(100, 100, 111, 0.2);
+}
+.ShopName {
+  display: flex;
+  border-bottom: 1.1px solid rgba(100, 100, 111, 0.2);
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: var(--ff-M);
+}
+.rating_ShopView {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6rem;
+}
+
+.rating_ShopView .ShopKieeperating,
+.rating_ShopView .ViewShopBtn {
+  text-align: center;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+.rating_ShopView span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: var(--ff-P);
+  font-weight: 400;
+}
+.ViewShopBtn {
+  border: 0;
+  outline: 0;
+  background: var(--primary-color);
+  font-family: var(--ff-M);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #f4f4f4;
+}
+
+.ViewShopBtn:hover,
+.ViewShopBtn:focus {
+  background: var(--primary-color-Hover);
+}
+@media (max-width: 893px) {
+  /* Grid Warppe */
+
+  .popupcontentWrapper {
+    grid-template-columns: 1fr;
+  }
+  .btn-group {
+    margin-bottom: 1rem;
+  }
+
+  #popupDescriptionContainer {
+    margin-top: 1em;
+  }
+
+  /* RightSide Detilas Container */
+  .popupDetilasContainer {
+    padding: 0.5em;
+  }
+  .popupImgaeContaner {
+    height: 50vh;
+  }
+  .popupImgaeContaner img {
+    height: 100%;
+    object-fit: contain;
+  }
+}

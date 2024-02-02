@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho | Redesign</title>
+
+    <!-- Favicon Link -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="./imgs/logo/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="showy">
+    <div class="loader">
+        <div class="i-c">
+            <img src="./imgs/logo/logo.png" alt="">
+        </div>
+        <div class="progressBar">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <!-- Header Start -->
+
+    <header>
+        <div class="logo">
+            <img src="./imgs/logo/logo-removebg-preview.png" alt="logo">
+        </div>
+        <div class="search-bar">
+            <svg class="Search_Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1770_1836)">
+                    <path
+                        d="M19.7695 18.6698L16.0096 14.9098C17.3296 13.3298 18.1296 11.2999 18.1296 9.07989C18.1296 4.05995 14.0697 0 9.05978 0C4.0599 0 0 4.05995 0 9.07989C0 14.0998 4.0599 18.1598 9.05978 18.1598C11.2897 18.1598 13.3297 17.3498 14.9096 16.0098L18.6695 19.7698C18.9695 20.0698 19.4695 20.0698 19.7695 19.7698C20.0795 19.4698 20.0795 18.9698 19.7695 18.6698ZM9.05978 16.5998C4.91988 16.5998 1.54996 13.2298 1.54996 9.07989C1.54996 4.92994 4.91988 1.55998 9.05978 1.55998C13.1997 1.55998 16.5696 4.92994 16.5696 9.07989C16.5696 13.2298 13.1997 16.5998 9.05978 16.5998Z"
+                        fill="#8B8BA3">
+
+                    </path>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1770_1836">
+                        <rect width="19.9995" height="19.9998" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+            <input type="text" placeholder="Search..." class="Search_Input" id="SearchInput">
+            <svg id="ThreeDots" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                fill="none">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M16 8c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm-6 0c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zM4 8c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"
+                        fill="#5C5F62"></path>
+                </g>
+            </svg>
+
+
+            <div class="popular-searches">
+                <div id="RecentSearches"></div>
+                <h2>Popular Searches</h2>
+                <hr>
+                <div class="popluar-items">
+                    <a href="#">Saree</a>
+                    <a href="#">Tshirts</a>
+                    <a href="#">Kurtis</a>
+                    <a href="#">SmartWatch</a>
+                    <a href="#">Watch</a>
+                    <a href="#">Top</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Palazzo Set</a>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="Menu">
+        <label class="burger" for="Menu">
+            <img src="https://www.svgrepo.com/show/511068/menu-alt-05.svg" alt="">
+        </label>
+
+        <div class="nav-btn-groups">
+
+            <button>
+                <svg fill="#333" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.481 415.481" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                d="M305.037,0H110.445C87.177,0,68.247,18.93,68.247,42.198v331.085c0,23.269,18.93,42.198,42.198,42.198h194.592 c23.268,0,42.198-18.93,42.198-42.198V42.198C347.235,18.93,328.305,0,305.037,0z M335.235,373.283 c0,16.651-13.547,30.198-30.198,30.198H110.445c-16.651,0-30.198-13.547-30.198-30.198V42.198C80.247,25.547,93.793,12,110.445,12 h194.592c16.651,0,30.198,13.547,30.198,30.198V373.283z">
+                            </path>
+                            <path
+                                d="M305.037,27H110.445c-8.38,0-15.198,6.818-15.198,15.198v331.085c0,8.38,6.818,15.198,15.198,15.198h194.592 c8.38,0,15.198-6.818,15.198-15.198V42.198C320.235,33.818,313.417,27,305.037,27z M110.445,39h194.592 c1.764,0,3.198,1.435,3.198,3.198v40.59h-5.251v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6 s-6,2.687-6,6v10H180.25v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10 c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.403v-40.59 C107.247,40.435,108.681,39,110.445,39z M296.983,304.692c-3.313,0-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10 H180.25v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6 s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.403v-47.476h6.403v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2 v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10 h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h92.533v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h5.251v47.476h-5.251v-10 C302.983,307.379,300.297,304.692,296.983,304.692z M302.983,261.217v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10H198.45v-10 c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10 h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.403V213.74h6.403v10 c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h92.533v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10 h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6 v-10h5.251v47.477H302.983z M302.983,201.74v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6 v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10H143.85v-10c0-3.313-2.687-6-6-6 s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.403v-47.476h6.403v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2 v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h92.533v10c0,3.313,2.687,6,6,6s6-2.687,6-6 v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h5.251v47.476H302.983z M302.983,142.265v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10 c0-3.313-2.687-6-6-6s-6,2.687-6,6v10H162.05v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6 v10h-6.2v-10c0-3.313-2.687-6-6-6s-6,2.687-6,6v10h-6.403V94.788h6.403v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10 c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10 h92.533v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h5.251v47.477H302.983z M305.037,376.481H110.445c-1.764,0-3.198-1.435-3.198-3.198v-40.591h6.403v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10 c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10 h92.533v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h6.2v10c0,3.313,2.687,6,6,6s6-2.687,6-6v-10h5.251v40.591 C308.235,375.047,306.8,376.481,305.037,376.481z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <h3 class="name-btn">
+                    Become A Seller
+                </h3>
+            </button>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <button class="Profile navMOBActive">
+
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="sc-pyfCe leNxcK hover" mr="8"
+                    iconsize="20">
+                    <g clip-path="url(#user_svg__a)">
+                        <path
+                            d="M15.316 13.016c1.512-1.058 2.516-2.797 2.516-4.784A5.835 5.835 0 0 0 12 2.4a5.835 5.835 0 0 0-5.832 5.832 5.79 5.79 0 0 0 2.517 4.784C4.343 14.291 1.2 17.996 1.2 22.37v.022c0 .896.843 1.609 1.825 1.609h17.95c.983 0 1.825-.713 1.825-1.61v-.02c0-4.375-3.143-8.08-7.484-9.354ZM7.853 8.232a4.148 4.148 0 0 1 8.294 0 4.148 4.148 0 0 1-8.294 0Zm13.122 14.083H3.025a.245.245 0 0 1-.14-.032c.054-4.45 4.126-8.057 9.115-8.057 4.99 0 9.05 3.596 9.115 8.057a.245.245 0 0 1-.14.032Z"
+                            fill="#333"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="user_svg__a">
+                            <path fill="#fff" transform="translate(1.2 2.4)" d="M0 0h21.6v21.6H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="name-btn">
+                    Profile
+                </h3>
+
+            </button>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <button>
+                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" mr="8"
+                    class="sc-csDkEv gKneUL hover" stroke="greyBase" iconsize="20">
+                    <path
+                        d="m4.987 5.469 1.848 7.2a1 1 0 0 0 .968.752h8.675a1 1 0 0 0 .962-.726l1.697-5.952a1 1 0 0 0-.962-1.274H4.987Zm0 0-.943-3.248a1 1 0 0 0-.96-.721H1"
+                        stroke="#333" stroke-width="1.5" stroke-linecap="round"></path>
+                    <ellipse cx="9.421" cy="16.744" rx="1.243" ry="1.256" stroke="#333" stroke-width="1.5"></ellipse>
+                    <ellipse cx="15.221" cy="16.744" rx="1.243" ry="1.256" stroke="#333" stroke-width="1.5"></ellipse>
+                </svg>
+                <h3 class="name-btn">
+                    Cart
+                </h3>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Header End -->
+    <!-- Nav Start -->
+
+
+    <nav>
+        <ul>
+            <li><span>Women</span>
+                <div class="active-nav"></div>
+
+            </li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Men</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Kids</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Home & Kitchen</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Beauty & Health</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Jewellery & Accessories</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Bags & FootWear</span></li>
+            <span class="VerticalLine">&VerticalBar;</span>
+            <li><span>Electronics</span></li>
+        </ul>
+    </nav>
+
+    <style>
+
+    </style>
+    <div class="cart-popup">
+        <div class="head">
+            <h1>you'r cart</h1>
+            <!-- cartclose -->
+            <p class="cartclose cart-close">
+                <img src="https://www.svgrepo.com/show/521068/arrow-left.svg" alt="">
+                <span>Back</span>
+            </p>
+        </div>
+        <div class="scroll-warp">
+
+
+            <div class="cart-product-detail">
+                <div class="wrapper-detail">
+                    <div class="pro-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <button class="remove"><img src="https://www.svgrepo.com/show/381909/dustbin-bin-trush.svg"
+                            alt=""></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="total">
+            <div class="amout">
+                <p>total: </p>
+                <b><span>₹</span></b>
+            </div>
+            <div class="checkout">
+                <p>pay</p><img src="https://www.svgrepo.com/show/510166/right-chevron.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Nav End -->
+    <!-- Drop-Menu-Container's Start -->
+    <!-- Women -->
+    <div class="main-drop-container">
+        <div class="drop-container" id="WomenClothings">
+            <h1 class="main-drop-heading">Women's Clothings</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    All Women Ethic
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Saree
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Silk Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Cotton Silk Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Cotton Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Georgette Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Chiffon Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Satin Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">Embroidered Sarees</a></li>
+                    <li class="Drop-Items"><a href="#">All Sarees</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Kurtis
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Anarkali Kurtis</a></li>
+                    <li class="Drop-Items"><a href="#">Rayon Kurtis</a></li>
+                    <li class="Drop-Items"><a href="#">Cotton Kurtis</a></li>
+                    <li class="Drop-Items"><a href="#">Embroidered Kurtis</a></li>
+                    <li class="Drop-Items"><a href="#"> All Kurtis</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Suits & Dress <br> Material
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Chanderi Suits</a></li>
+                    <li class="Drop-Items"><a href="#">Embroidered Suits</a></li>
+                    <li class="Drop-Items"><a href="#">Cotton Suits</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    All Kurta Sets
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">All Kurtas</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Other Ethnic
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Blouses</a></li>
+                    <li class="Drop-Items"><a href="#">Lehanga</a></li>
+                    <li class="Drop-Items"><a href="#">Dupattas</a></li>
+                    <li class="Drop-Items"><a href="#">Gown</a></li>
+                    <li class="Drop-Items"><a href="#">Bottomwear</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Men -->
+    <div class="main-drop-container">
+        <div class="drop-container" id="MenClothings">
+            <h1 class="main-drop-heading">Men's Clothings</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Top Wear
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Shirts</a></li>
+                    <li class="Drop-Items"><a href="#">Tshirts</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Bottom Wear
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Track Pants</a></li>
+                    <li class="Drop-Items"><a href="#">Jeans</a></li>
+                    <li class="Drop-Items"><a href="#">Trousers</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Men Accessories
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Watches</a></li>
+                    <li class="Drop-Items"><a href="#">Wallets</a></li>
+                    <li class="Drop-Items"><a href="#">Bags</a></li>
+                    <li class="Drop-Items"><a href="#">All Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Ethnic Wear
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Men Kurtas</a></li>
+                    <li class="Drop-Items"><a href="#">Ethnic Jackets</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Inner & Sleep Wear
+
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Vests</a></li>
+                    <li class="Drop-Items"><a href="#">All Inner & Sleep Wear</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Kid -->
+    <div class="main-drop-container">
+        <div class="drop-container" id="Kid'sClothings">
+            <h1 class="main-drop-heading">Kids's Clothings</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Boys & Girls 2+ Years
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Dresses</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Infant 0-2 Years
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Rompers</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Toys & Accessories
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Soft Toys</a></li>
+                    <li class="Drop-Items"><a href="#">Footwear</a></li>
+                    <li class="Drop-Items"><a href="#">Stationery</a></li>
+                    <li class="Drop-Items"><a href="#">Watches</a></li>
+                    <li class="Drop-Items"><a href="#">Bags & Backpacks </a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Baby Care
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">All Baby Care </a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Homes & Kitchen-->
+    <div class="main-drop-container">
+        <div class="drop-container" id="HomeAndKitchen">
+            <h1 class="main-drop-heading"> Homes & Kitchen </h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Home Furnishing
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">BedSheets</a></li>
+                    <li class="Drop-Items"><a href="#">Doormats</a></li>
+                    <li class="Drop-Items"><a href="#">Curtains & Sheers</a></li>
+                    <li class="Drop-Items"><a href="#">Cushions & Cushion Covers</a></li>
+                    <li class="Drop-Items"><a href="#">Mattress Protectors</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Home Decor
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">TShowpieces</a></li>
+                    <li class="Drop-Items"><a href="#">Clocks</a></li>
+                    <li class="Drop-Items"><a href="#">Stickers</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Kitchen & Dining
+
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Kitchen Storage</a></li>
+                    <li class="Drop-Items"><a href="#">Cookware & Bakeware</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Beauty & Health-->
+    <div class="main-drop-container">
+        <div class="drop-container" id="BeautyAndHealth">
+            <h1 class="main-drop-heading">Beauty & Healths</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Make up
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Face</a></li>
+                    <li class="Drop-Items"><a href="#">Eyes</a></li>
+                    <li class="Drop-Items"><a href="#">Lips</a></li>
+                    <li class="Drop-Items"><a href="#">Nails</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Wellness
+
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Sanitizers</a></li>
+                    <li class="Drop-Items"><a href="#">Oral Care</a></li>
+                    <li class="Drop-Items"><a href="#">Feminine Hygiene</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Skincare
+
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#"> Deodorants</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Jewellery & Accessories-->
+    <div class="main-drop-container">
+        <div class="drop-container" id="JewelleryAndAccessories">
+            <h1 class="main-drop-heading">Jewellery & Accessories</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Jewellery
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Jewellery Set</a></li>
+                    <li class="Drop-Items"><a href="#">Mangalsutras</a></li>
+                    <li class="Drop-Items"><a href="#">Studs</a></li>
+                    <li class="Drop-Items"><a href="#">Bangles</a></li>
+                    <li class="Drop-Items"><a href="#">Anklets</a></li>
+                    <li class="Drop-Items"><a href="#"> View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Accessories
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Rings</a></li>
+                    <li class="Drop-Items"><a href="#">Earrings</a></li>
+                    <li class="Drop-Items"><a href="#">Necklaces</a></li>
+                    <li class="Drop-Items"><a href="#"> Watches</a></li>
+                    <li class="Drop-Items"><a href="#"> View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Other Itmes
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Bags
+                        </a></li>
+                    <li class="Drop-Items"><a href="#"> Hair Accessories/a></li>
+                    <li class="Drop-Items"><a href="#"> Sunglasses</a></li>
+                    <li class="Drop-Items"><a href="#"> Socks</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Bags & FootWear-->
+    <div class="main-drop-container">
+        <div class="drop-container" id="BagsAndFootWear">
+            <h1 class="main-drop-heading">Bags & FootWear</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Women Bags
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Handbags</a></li>
+                    <li class="Drop-Items"><a href="#">Clutches</a></li>
+                    <li class="Drop-Items"><a href="#">Slingbags</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Men Bags
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Men Wallets
+                    <li class="Drop-Items"><a href="#">bag's
+                        </a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Women Footwear
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Flats
+                        </a></li>
+                    <li class="Drop-Items"><a href="#">Bellies
+                        </a></li>
+                    <li class="Drop-Items"><a href="#"> Juttis</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+            <div class="drop-content">
+                <h3 class="drop-heading"> Men Footwear
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Sports Shoes</a></li>
+                    <li class="Drop-Items"><a href="#">Casual Shoes</a></li>
+                    <li class="Drop-Items"><a href="#">Formal Shoes</a></li>
+                    <li class="Drop-Items"><a href="#">Sandals</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Electronics-->
+    <div class="main-drop-container">
+        <div class="drop-container" id="Electronics">
+            <h1 class="main-drop-heading">Electronics</h1>
+            <div class="close-box">
+                <span>&times;</span>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Mobile & Accessories
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Smartwatches</a></li>
+                    <li class="Drop-Items"><a href="#">Mobile Holders</a></li>
+                    <li class="Drop-Items"><a href="#">Mobile cases and covers</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <h3 class="drop-heading">
+                    Appliances
+                </h3>
+                <ul class="Drop-menu">
+                    <li class="Drop-Items"><a href="#">Home Appliances</a></li>
+                    <li class="Drop-Items"><a href="#">Grooming</a></li>
+                    <li class="Drop-Items"><a href="#">View All</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Drop-Menu-Container's End -->
+    <!-- Hero Section Start -->
+    <div class="hero-sec">
+        <div class="left">
+            <h1 class="HeadLine">Lowest Prices <br>
+                Best Quality <br>
+                Shopping
+            </h1>
+
+            <div class="fetures">
+                <div class="component">
+                    <img src="https://images.meesho.com/images/pow/freeDelivery_jamun.svg" alt="">
+                    <h2>Free<br>Delivery</h2>
+                </div>
+                <div class="component">
+                    <img src="https://images.meesho.com/images/pow/cod_jamun.svg" alt="">
+                    <h2>Cash on<br>Delivery</h2>
+                </div>
+                <div class="component">
+                    <img src="https://images.meesho.com/images/pow/easyReturns_jamun.svg" alt="">
+                    <h2>Easy<br>Return</h2>
+                </div>
+
+            </div>
+            <div class="hero-btnGroup">
+                <button>
+                    <img src="https://www.svgrepo.com/show/223032/playstore.svg" alt="">
+                    <span>Download The App<br>on PlayStore</span>
+                </button>
+                <button>
+                    <img src="https://www.svgrepo.com/show/69341/apple-logo.svg" alt="">
+                    <span>Download The App<br>on AppStore</span>
+                </button>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Other Catogary Start -->
+    <section class="TopCateSection">
+        <div class="heading">
+            <h1 class="heading-title">Top Categories <br> to choose from</h1>
+        </div>
+        <div id="center">
+            <button id="PauseSliderBtn">
+                <span class="material-symbols-outlined" id="pausePlayIcon">
+                    pause
+                </span>
+            </button>
+            <div class="img-container" id="SilderOne">
+                <img src="https://images.pexels.com/photos/3735641/pexels-photo-3735641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <div class="content">
+                    <div class="silderHeading">
+                        <h2>Clothings</h2>
+                    </div>
+                    <div class="silderSubHeading">
+                        <p>Elevate Your Style: <br> Discover Fashionable Clothing Choices</p>
+                    </div>
+                    <div class="slider-button">
+                        <button>Check Out Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="img-container" id="SilderTwo">
+                <img src="https://images.pexels.com/photos/5824485/pexels-photo-5824485.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="">
+                <div class="content">
+                    <div class="silderHeading">
+                        <h2>Accessories</h2>
+
+                    </div>
+                    <div class="silderSubHeading">
+                        <p>Complete Your Look: <br> Explore our Stylish Accessories Collection</p>
+                    </div>
+                    <div class="slider-button">
+                        <button>Check Out Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="img-container" id="SilderThree">
+                <img src="https://images.pexels.com/photos/6912812/pexels-photo-6912812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <div class="content">
+                    <div class="silderHeading">
+                        <h2>Home Care</h2>
+                    </div>
+                    <div class="silderSubHeading">
+                        <p>Simplify Your Home Care: <br> Discover Quality Products and Alliances.
+                    </div>
+                    <div class="slider-button">
+                        <button>Check Out Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="img-container" id="SilderFour">
+                <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+                <div class="content">
+                    <div class="silderHeading">
+                        <h2>Health Care</h2>
+                    </div>
+                    <div class="silderSubHeading">
+                        <p>Simplify Your Home Care: <br> Discover Quality Products and Alliances.
+                    </div>
+                    <div class="slider-button">
+                        <button>Check Out Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--  -->
+
+
+    </section>
+    <!-- Other Catogary End -->
+    <!-- Brands We Sale Start -->
+    <!-- Products For You Start -->
+    <section class="ProductsForYou">
+        <div class="heading">
+            <h1 class="heading-title">Products<br>of This Year</h1>
+        </div>
+        <!-- Indicator's -->
+        <div class="scroll-indicator">
+            <div id="scroll-indicator-left">
+                <!-- Left indicator -->
+                <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </div>
+            <div id="scroll-indicator-right">
+                <!-- Right indicator -->
+                <span class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </div>
+        </div>
+
+        <div class="product-content-wrapper">
+            <div class="product-container">
+                <!-- code Goes Here -->
+            </div>
+        </div>
+
+        <!-- popup -->
+        <div class="popup" id="popup">
+            <div class="popupContent" id="popupContent">
+
+                <!-- cartclose -->
+                <p class="closeBtn">
+                    <img src="https://www.svgrepo.com/show/521068/arrow-left.svg" alt="">
+                    <span>Back</span>
+                </p>
+
+                <a href="index.html" class="btn-back">
+                </a>
+
+                <!-- For Styling -->
+                <div class="border"></div>
+
+                <!-- Grid Warpper -->
+                <div class="popupcontentWrapper">
+
+                    <!-- LeftSide Image Container -->
+                    <div class="popupImgaeContaner">
+                        <img src="./imgs/meesho (1).png" alt="" id="popupImg">
+                    </div>
+
+                    <!-- RightSide Detilas Container -->
+                    <div class="popupDetilasContainer">
+                        <div class="label-container" id="labelContainer">
+                            <label id="popupLabelOne" for="" class="men labelProduct">men</label>
+                            <label id="popupLabelTwo" for="" class=" labelProduct">new</label>
+                        </div>
+                        <!-- Title Product -->
+                        <h2 id="popupTitle">productTitle</h2>
+                        <!-- Price -->
+                        <p id="popupPrice">₹0.00</p>
+                        <div id="popupDescriptionContainer">
+                            <h5 class="popupdetailheading">Product Details:</h5>
+                            <p id="popupDescription">Monoction Zig Zag Casual Trendy Stylish Slip-On Slipper, Flip Flops
+                                & Slides For Women..</p>
+                        </div>
+                        <!-- 3 Btn Group -->
+                        <div class="btn-group">
+                            <div id="Cart" class="addToCartBtn">cart</div>
+                            <a href="#" id="Supplier" class="Supplier">suplier</a>
+                            <div id="rating" class="rating">
+                                3
+                            </div>
+                        </div>
+                        <style>
+
+                        </style>
+                        <!-- Sold By -->
+                        <div id="shopKeepersContainer">
+
+                            <div class="ShopName">
+                                <h3>Sold By:</h3>
+                                <p>SHREE SHYAM ENTERPRISES.</p>
+                            </div>
+                            <div class="ShopKieeper-InfoBox">
+                                <div class="shop-Imag-icon">
+                                    <img src="./imgs/shop-svgrepo-com.svg" alt="">
+                                </div>
+                                <div class="Followers">
+                                    <p>34</p>
+                                    <p>Followers</p>
+                                </div>
+                                <div class="ShopsProducts">
+                                    <p>44</p>
+                                    <p>Products</p>
+                                </div>
+                            </div>
+                            <div class="rating_ShopView">
+
+                                <div class="ShopKieeperating">
+                                    <span>3.6<br>rating</span>
+
+                                </div>
+                                <button class="ViewShopBtn">ViewShop</button>
+                            </div>
+                        </div>
+
+                        <!-- Policys -->
+                        <div class="ShipmentPoly">
+                            <div class="PolyBox">
+                                <img src="./imgs/lowest_price_new.png" alt="">
+                                <p>Lowest<br>Price</p>
+                            </div>
+                            <div class="PolyBox">
+                                <img src="./imgs/cod_new.png" alt="">
+                                <p>Cash on<br>Delivery</p>
+                            </div>
+                            <div class="PolyBox">
+                                <img src="./imgs/return_new.png" alt="">
+                                <p>7 day's<br>returns</p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Free Or Paid Delivery -->
+                        <h3 class="DeliverContent" id="popupDelivery">Free Delivery</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Products For You End -->
+    <!-- Bcom Suppier start-->
+
+    <section class="BcmSupplierr-container">
+        <div class="heading">
+            <h1 class="heading-title">Become A<br>Supplier</h1>
+        </div>
+
+        <div class="BcmSupplierr-content-box">
+            <h1 class="BcmSupplierr-Heding">Register as a Meesho Supplier</h1>
+            <p class="BcmSupplierr-SubHeding">Sell your products to crores of customers at 0% commission</p>
+
+            <div class="info-BcmSupplierr">
+                <div class="BcmSupplierr-box">
+                    <img class="BcmSupplierrIcon" src="https://www.svgrepo.com/show/500683/sell.svg" alt="">
+                    <h3>Grow Your <br> Business 10x</h3>
+                </div>
+                <span class="VerticalLine">&VerticalBar;</span>
+                <div class="BcmSupplierr-box">
+                    <img class="BcmSupplierrIcon" src="https://www.svgrepo.com/show/384922/hand-money-cash-hold.svg"
+                        alt="">
+                    <h3>Enjoy 100% <br> Profit</h3>
+                </div>
+                <span class="VerticalLine">&VerticalBar;</span>
+                <div class="BcmSupplierr-box">
+                    <img class="BcmSupplierrIcon" src="https://www.svgrepo.com/show/438473/dollar-round.svg" alt="">
+
+                    <h3>Sell All <br> Over India</h3>
+                </div>
+            </div>
+            <button class="bcm-supplier-btn">SignUp As Supplier Now</button>
+            <div class="right_img-bcmSupplierr">
+                <!-- <img src="https://supplier.meesho.com/images/Desktop-Pic.png" alt=""> -->
+            </div>
+        </div>
+    </section>
+    <!-- Bcom Suppier End -->
+    <section class="MoreProduct">
+        <div class="heading">
+            <h1 class="heading-title">Product<br>For You</h1>
+        </div>
+        <!-- productContainerSecond  -->
+        <div class="productContainerSecond">
+            <div class="fillteringContainer" id="fillteringContainer">
+                <div class="filterwrapper">
+                    <!-- Heading -->
+                    <div class="filterHeading">
+                        <h2>Filter</h2>
+                        <p>1000+ Products</p>
+                    </div>
+                    <!-- Heading -->
+                    <!-- Category -->
+                    <!-- Gender -->
+                    <h3 class="filterGenderHeading">
+                        Gender
+                    </h3>
+                    <div class="filterGenderContainer">
+                        <div class="GenderBox">
+                            <p>Boy's</p>
+                        </div>
+                        <div class="GenderBox">
+                            <p>Girl's</p>
+                        </div>
+                        <div class="GenderBox">
+                            <p>Men's</p>
+                        </div>
+                        <div class="GenderBox">
+                            <p>Women's</p>
+                        </div>
+                    </div>
+                    <!-- Gender -->
+                    <!-- 
+            Gender Ne Prmane Category And Types Changes Thay Ka Navi Itmes Gender Prmane Add Kre 
+        -->
+                    <!-- Category -->
+                    <h3 class="filterCategoryHeading">
+                        Categories & Type's
+                    </h3>
+                    <div class="filterCategoryContainer">
+                        <!-- 1st -->
+                        <label for="filterAccesories" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterAccesories">
+                            <span>accesories</span>
+                        </label>
+                        <!-- 2nd -->
+                        <label for="filterTopWare" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterTopWare">
+                            <span>TopWare</span>
+                        </label>
+                        <!-- 3rd -->
+                        <label for="filterBottomWare" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterBottomWare">
+                            <span>BottomWare</span>
+                        </label>
+                        <!-- 4th -->
+                        <label for="filterBagsAndBPacks" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterBagsAndBPacks">
+                            <span>Bags & Backpacks</span>
+                        </label>
+                        <!-- 5th -->
+                        <label for="filterKitchenAcc" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterKitchenAcc">
+                            <span>Kitchen accesories</span>
+                        </label>
+                        <!-- 6th -->
+                        <label for="filterCMProtection" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterCMProtection">
+                            <span>Crib Mattress Protection</span>
+                        </label>
+                        <!-- 7th -->
+                        <label for="filterBodyBags" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterBodyBags">
+                            <span>Cross Body Bags & Sling Bags</span>
+                        </label>
+                        <!-- 8th -->
+                        <label for="filterMasks" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterMasks">
+                            <span>Decorative Masks</span>
+                        </label>
+                        <!-- 9th -->
+                        <label for="filterDressUpAndPP" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterDressUpAndPP">
+                            <span>DressUp & PretendPlay</span>
+                        </label>
+                        <!-- 10th -->
+                        <label for="filterDresses" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterDresses">
+                            <span>Dresses</span>
+                        </label>
+                        <!-- 11th -->
+                        <label for="filterAccesories" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterAccesories">
+                            <span>Electronic Item's</span>
+                        </label>
+                        <!-- 12th -->
+                        <label for="filterShoes" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterShoes">
+                            <span>Shoe's</span>
+                        </label>
+                        <!-- 13th -->
+                        <label for="filterInnerWare" class="filterCateGoryFullBlock">
+                            <input type="checkbox" name="" id="filterInnerWare">
+                            <span>InnerWare</span>
+                        </label>
+                    </div>
+
+                    <!-- Braded -->
+                    <label for="BrandBox" class="BrandBox">
+                        <input type="checkbox" name="" id="BrandBox">
+                        <span>Branded</span>
+                    </label>
+                    <!-- Braded -->
+                    <!-- Warrenty -->
+                    <h3 class="filterWarrentyHeding">
+                        Warrenty's
+                    </h3>
+                    <ul class="filterWarrentyContainer">
+                        <li class="filterWarrentyItems">1 Month</li>
+                        <li class="filterWarrentyItems">2 Month</li>
+                        <li class="filterWarrentyItems">3 Month</li>
+                        <li class="filterWarrentyItems">6 Month</li>
+                        <li class="filterWarrentyItems">1 Year</li>
+                    </ul>
+                    <!-- Warrenty -->
+                </div>
+
+            </div>
+
+            <!-- MainProducts -->
+            <div class="MainProducts">
+                <!-- FilterBtn -->
+                <div class="filterSilderBtn">
+                    <img src="https://www.svgrepo.com/show/499601/filter-edit.svg" alt="FilterIcon" id="FilterBtnIcon">
+                </div>
+                <!-- FilterBtn -->
+                <!-- dummyProductCard -->
+                <style>
+                    .search-input-for-container {
+                        height: 2.5rem;
+                        width: 100%;
+                        background: white;
+                        border: 1.4px solid var(--whiteMoreLighter);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: .25em;
+                    }
+
+                    .search-input-for-container input {
+                        height: 100%;
+                        flex: 1;
+                        font-family: var(--ff-P);
+                        padding-left: .5em;
+                        font-size: .99em;
+                    }
+
+                    .search-input-for-container svg {
+                        height: 100%;
+                        width: 20px;
+                        padding-bottom: .1em;
+                        margin-right: .7em;
+                    }
+
+                    .search-input-for-container .srchBtn {
+                        height: 100%;
+                        flex: .12;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .5em;
+                        background-color: var(--offWhite);
+                        font-family: var(--ff-P);
+                        padding: .5em;
+                        cursor: pointer;
+                        border-radius: inherit;
+                    }
+
+                    .srchBtn:hover {
+                        filter: invert(.011);
+                    }
+                </style>
+                <div class="search-input-for-container">
+                    <input type="text" placeholder="search here" class="inputSrch_for_MP" />
+                    <button class="srchBtn">
+                        <span>search</span>
+                        <svg class="Search_Icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1770_1836)">
+                                <path
+                                    d="M19.7695 18.6698L16.0096 14.9098C17.3296 13.3298 18.1296 11.2999 18.1296 9.07989C18.1296 4.05995 14.0697 0 9.05978 0C4.0599 0 0 4.05995 0 9.07989C0 14.0998 4.0599 18.1598 9.05978 18.1598C11.2897 18.1598 13.3297 17.3498 14.9096 16.0098L18.6695 19.7698C18.9695 20.0698 19.4695 20.0698 19.7695 19.7698C20.0795 19.4698 20.0795 18.9698 19.7695 18.6698ZM9.05978 16.5998C4.91988 16.5998 1.54996 13.2298 1.54996 9.07989C1.54996 4.92994 4.91988 1.55998 9.05978 1.55998C13.1997 1.55998 16.5696 4.92994 16.5696 9.07989C16.5696 13.2298 13.1997 16.5998 9.05978 16.5998Z"
+                                    fill="#8B8BA3">
+
+                                </path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1770_1836">
+                                    <rect width="19.9995" height="19.9998" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+
+                </div>
+                <div class="dummyContainer main-products-for-all">
+                    <div class="msgNotFind"></div>
+                </div>
+            </div>
+            <!-- MainProducts -->
+            <!-- productContainerSecond  -->
+        </div>
+    </section>
+    <!-- <img src="./imgs/shoe/shoe_1.png"  alt="" srcset=""> -->
+    <!-- FAQ -->
+    <div class="container">
+        <div class="heading">
+            <h1 class="heading-title">FAQ's<br>For You</h1>
+        </div>
+
+        <div class="accordion">
+            <h2 class="accordion-heading">
+                <button type="button" aria-expanded="false">
+                    <span tabindex="-1">How does Meesho work for sellers?</span>
+                </button>
+            </h2>
+            <div class="accordion-content">
+                Meesho empowers sellers by providing a platform to showcase and sell their products. Sellers can create
+                an online store, share product catalogs with potential customers, and manage orders seamlessly. Meesho
+                handles payment processing and logistics, allowing sellers to focus on growing their business.
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="accordion-heading">
+                <button type="button" aria-expanded="false">
+                    <span tabindex="-1">What types of products can I find on Meesho?</span>
+                </button>
+            </h2>
+            <div class="accordion-content">
+                Meesho offers a diverse range of products, including fashion, beauty, home essentials, and more. Explore
+                our extensive catalog to discover trendy and high-quality items sourced from reliable suppliers. From
+                clothing and accessories to home decor, Meesho has something for everyone.
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="accordion-heading">
+                <button type="button" aria-expanded="false">
+                    <span tabindex="-1">How can I track my order on Meesho?</span>
+                </button>
+            </h2>
+            <div class="accordion-content">
+                Tracking your order on Meesho is easy! Simply log in to your account, go to the 'Orders' section, and
+                find the relevant order. You'll see real-time updates on the status of your shipment, including dispatch
+                and delivery details. We also provide tracking information via SMS and email for your convenience.
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="accordion-heading">
+                <button type="button" aria-expanded="false">
+                    <span tabindex="-1">Is my payment information secure on Meesho?</span>
+                </button>
+            </h2>
+            <div class="accordion-content">
+                Yes, your payment information is completely secure on Meesho. We prioritize the security of your data
+                and use industry-standard encryption protocols to safeguard all transactions. Additionally, we do not
+                store sensitive payment details on our servers, ensuring a safe and reliable shopping experience for our
+                users.
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="helpwrapper">
+            <button class="helpBtn">Need Any Help?</button>
+        </div>
+        <div class="f-wrapper">
+            <div class="logo-f">
+                <div class="logo">
+                    <img src="./imgs/logo/logo-removebg-preview.png" alt="">
+                </div>
+                <p>Welcome to Meesho - your ultimate destination for affordable and trendy fashion, beauty, and home
+                    essentials. We believe in making shopping a delightful experience by bringing you a curated
+                    collection of quality products from trusted sellers.</p>
+                <br>
+                <p><B>contect us: </B>(280) 201-3486</p>
+                <p><B>mail: </B>MIsho01EX@gmail.com</p>
+                <p><B>address: </B>Incrocio Ferrari 2, Settimo Marino lido, PI 61337</p>
+            </div>
+            <div class="f-link">
+                <div class="men">
+                    <h5>Men's</h5>
+                    <p>T-shirt</p>
+                    <p>Shirts</p>
+                    <p>Pants</p>
+                    <p>Jackets</p>
+                </div>
+                <div class="women">
+                    <h5>Women's</h5>
+                    <p>T-shirt</p>
+                    <p>Shirts</p>
+                    <p>Pants</p>
+                    <p>Jackets</p>
+                </div>
+                <div class="kid">
+                    <h5>kid's</h5>
+                    <p>T-shirt</p>
+                    <p>Shirts</p>
+                    <p>Pants</p>
+                    <p>Jackets</p>
+                </div>
+                <div class="accesories">
+                    <h5>Accesories</h5>
+                    <p>Kitchen</p>
+                    <p>Clocks</p>
+                    <p>Table</p>
+                    <p>Carpet</p>
+                </div>
+            </div>
+        </div>
+        <div class="mail-us">
+            <input type="text" placeholder="message here..." />
+            <button>send</button>
+        </div>
+        <ul class="social-links">
+            <li>
+                <p>Instagram</p>
+            </li>
+            <li>
+                <p>X twiiter</p>
+            </li>
+            <li>
+                <p>FaceBook</p>
+            </li>
+            <li>
+                <p>Whatsapp</p>
+            </li>
+        </ul>
+        <div class="copywrites">
+            &copy; 2024 Meesho. All rights reserved. | Privacy Policy | Terms of Service
+        </div>
+    </footer>
+    <!-- <img src="" alt=""> -->
+    <div class="placeForNavBottom"></div>
+</body>
+
+<!-- Javascrip Links -->
+<!-- Gsap Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- Gsap Flip Plugin Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+<!-- Js Code -->
+
+<script src="js/app.js"></script>
+<script src="js/product.js" defer></script>
+<script>
+
+
+
+</script>
+</body>
+
+</html>
